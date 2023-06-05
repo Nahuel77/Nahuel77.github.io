@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nahuel Calcara</title>
+	<link rel="icon" href="img/nahuel_logo.svg">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Teko&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+
+		<div id="menu">
+			<div id="menu_bar">
+				<img src="img/menu.svg" alt="menu" id="menu_icon">
+				<h1><a href="#" id="title">Nahuel Calcara</a></h1>
+			</div>
+			<a id="menu_logo" href="#">
+				<span id="logo">
+					<img src="img/me.png" alt="Nahuel">
+				</span>
+				<p>Nahuel Calcara</p>
+			</a>
+			<div id="menu_content">
+				<ul id="menu_list">
+					<hr class="separador_2">
+					<li class="menu_target" ><a href="#seccion_uno" id="sobre_mi">sobre mi</a></li>
+					<hr class="separador_2">
+					<li class="menu_target" ><a href="#seccion_dos" id="portafolios">proyectos</a></li>
+					<hr class="separador_2">
+					<li class="menu_target" ><a href="#seccion_tres" id="formacion">formación</a></li>
+					<hr class="separador_2">
+					<li class="menu_target" ><a href="#seccion_cuatro" id="contacto">contacto</a></li>
+					<hr class="separador_2">
+				</ul>
+				<div id="lenguaje">
+					<p>esp</p>
+					<div id="lenguaje_check">
+						<input class="menu_target" type="checkbox" id="check">
+						<label for="check" id="button_check"></label>
+					</div>
+					<p>eng</p>
+				</div>	
+			</div>
+		</div>
+
+		<div id="home">
+			<div id="pront">
+				<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="120px" height="120px" viewBox="0 0 177.000000 145.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,145.000000) scale(0.100000,-0.100000)" fill="#ADEB00" stroke="none">
+						<path id="path1" d="M926 1303 c-14 -50 -256 -1134 -256 -1147 0 -13 14 -16 80 -16 44 0 80 2 80 3 0 2 59 262 130 577 72 315 130 579 130 586 0 11 -19 14 -79 14 -67 0 -80 -3 -85 -17z"/>
+						<path id="path2" d="M316 969 c-252 -198 -256 -201 -256 -237 0 -36 5 -41 254 -235 140 -108 257 -197 260 -197 3 0 6 44 6 98 l-1 97 -155 118 -155 119 58 45 c32 25 102 79 156 120 l97 75 0 99 c0 54 -2 99 -4 99 -2 0 -119 -90 -260 -201z"/>
+						<path id="path3" d="M1180 1072 l0 -99 128 -99 c70 -54 139 -108 154 -120 l27 -22 -154 -119 -154 -118 0 -97 c-1 -54 2 -98 5 -98 3 0 120 89 260 197 251 196 254 198 254 235 0 37 -3 40 -246 230 -135 106 -252 197 -260 201 -12 7 -14 -9 -14 -91z"/>
+					</g>
+				</svg>
+				<p id="hola_mundo">"¡Hola Mundo!"&#160;..<span>&#160;</span></p>
+			</div>
+			<p id="intro">Soy Nahuel Calcara, desarrollador web y de software.</p>
+		</div>
+
+		<hr class="separador">
+		<div id="seccion_uno">
+			<h2 id="sobre">SOBRE MI</h2>
+			<img src="img/me_bass.jpg" id="me_bass" alt="Nahuel Calcara">
+			<p id="sobre_mi_texto_1">Soy un desarrollador de software apasionado y músico.</p>
+			<p id="sobre_mi_texto_2">Mi experiencia musical me ha enseñado la importancia de la colaboración y la capacidad de adaptarme a diferentes estilos y géneros, lo cual me ayuda a acoplarme fácilmente a cualquier equipo.</p>
+			<p id="sobre_mi_texto_3">Además, mi interés por el arte y el dibujo me hace extremadamente consciente de los detalles estéticos y busco combinar la funcionalidad con una experiencia visual agradable en mis proyectos.</p>
+			<p id="sobre_mi_texto_4">Como programador, cuento con una sólida formación en desarrollo web y experiencia en desarrollo fullstack. Me enorgullece ofrecer soluciones eficientes y de calidad que cumplan con las necesidades de mis clientes. Siempre estoy buscando aprender y mantenerme actualizado con las últimas tendencias y tecnologías.</p>
+		</div>
+
+		<hr class="separador">
+		<div id="seccion_dos">
+			<h2 id="porta_entrada">Aquí encontrarás una selección de mis trabajos más recientes.</h2>
+			<article id="showcase">
+				<button id="prev"><</button>
+				<img id="thispic">
+				<button id="next">></button>
+				<button id="close">x</button>
+			</article>
+			<ul>
+				<hr class="separador_2">
+				<li class="proyects_list"><button class="proyects_titles">Kiosco App</button>
+					<div class="proyect" id="p_1">
+						<div class="parrafo">
+							<p id="proyect_1_1">Kiosco es una aplicación para el seguimiento de ingresos en locales de venta al público. Su objetivo es proporcionar una herramienta eficiente para registrar transacciones diarias. Los usuarios pueden ingresar el monto de las ventas realizadas, y tienen la opción de añadir detalles de cada venta si lo desean. La app captura automáticamente el horario exacto de la venta, brindando información precisa.</p>
+							<p id="proyect_1_2">Una característica destacada es el historial completo de ventas, que permite revisar transacciones pasadas en un calendario. Kiosco también ofrece una sección para cuentas de clientes, donde se registran saldos pendientes.</p>
+							<p id="proyect_1_3">Asi mismo, la aplicación permite conectar un perfil de Gmail para enviar copias de seguridad diarias de la base de datos al email, brindando la prevención de pérdida de datos.</p>
+							<p id="proyect_1_4">En resumen, Kiosco es una aplicación eficiente y versátil para la gestión de ingresos en locales de venta al público.</p>
+						</div>
+						<div class="galery">
+							<img src="img/proyect_1_1.png" alt="Kiosco" class="image">
+							<img src="img/proyect_1_2.png" alt="Kiosco" class="image">
+							<img src="img/proyect_1_3.png" alt="Kiosco" class="image">
+							<img src="img/proyect_1_4.png" alt="Kiosco" class="image">
+						</div>
+					</div>
+				</li>
+				<hr class="separador_2">
+				<li class="proyects_list"><button class="proyects_titles">Astor Tile</button>
+					<div class="proyect" id="p_2">
+						<div class="parrafo">
+							<p id="proyect_2_1">Un tilemap es una técnica utilizada en el desarrollo de videojuegos para representar y organizar los elementos gráficos de un nivel o mapa.</p>
+							<p id="proyect_2_2">Este programa diseñado en Python genera automáticamente tilemaps en estilo pixel art.</p>	
+							<p id="proyect_2_3">Permite dibujar mosaicos de fondo y de detalles en dos lienzos separados, para combinarlos luego. Con unos pocos clics, construye y guarda el tilemap resultante.</p>
+							<p id="proyect_2_4">La interfaz es simple, pero no pretende ser de uso comercial. Ademas proporciona herramientas como pintado por relleno (donde implemente un algoritmo de grafos BFS, para reconocer a los pixeles vecinos del mismo color.), herramienta de borrar y selector de color por click.</p>
+						</div>
+						<div class="galery">
+							<img src="img/proyect_2_1.png" alt="Astor Tiler" class="image">
+							<img src="img/proyect_2_2.png" alt="Astor Tiller" class="image">
+							<img src="img/proyect_2_3.png" alt="Astor Tiller" class="image">
+						</div>
+					</div>
+				</li>
+				<hr class="separador_2">
+				<li class="proyects_list"><button class="proyects_titles">Codo a Codo web</button>
+					<div class="proyect" id="p_3">
+						<div class="parrafo">
+							<p id="proyect_3_1">Durante mi participación en el curso "Codo a Codo", se me asignó la tarea de replicar una página web como trabajo práctico integrador. Como parte de este desafío, he desarrollado una versión propia de la web, aplicando mis conocimientos y habilidades adquiridas en el curso.</p>
+						</div>
+						<a href="https://nahuel77.github.io/">Codo a Codo 1</a>
+						<a href="https://deluxe-shortbread-5e2892.netlify.app/">Codo a Codo 2</a>
+						<div class="galery">
+							<img src="img/proyect_3_1.png" alt="" class="image">
+							<img src="img/proyect_3_2.png" alt="" class="image">
+							<img src="img/proyect_3_3.png" alt="" class="image">
+						</div>
+					</div>
+				</li>
+				<hr class="separador_2">
+				<p id="nota">* Esta web fue creada usando JavasCript puro. ;)</p>
+			</ul>
+		</div>
+
+		<hr class="separador">
+		<div id="seccion_tres">
+			<h2 id="title_sobre_mi">FORMACIÓN</h2>
+			<p id="formacion_1">Inicié mi camino en la programación a los 15 años, explorando lenguajes como Pascal y luego Visual Basic. Durante ese tiempo, tuve la oportunidad de tomar clases en el instituto Hilet para fortalecer mis fundamentos. Sin embargo, gran parte de mi formación ha sido autodidacta, lo cual me ha permitido adquirir habilidades de manera independiente y explorar diversas tecnologías.</p>
+			<p id="formacion_2">Poseo un nivel intermedio en el idioma inglés, aunque mi enfoque principal de mejora se encuentra en la pronunciación. Además, tengo conocimientos intermedios de portugués.</p>
+			<p id="formacion_3">En la actualidad, estoy cursando la carrera de Ingeniería Informática en la Universidad Nacional de Mar del Plata. Paralelamente, formo parte del programa "Codo a Codo", donde estoy cursando el programa de Full Stack con Java. Tengo planes de seguir ampliando mi formación a través de la participación en cursos y programas educativos en el futuro.</p>
+			<p id="formacion_4">No dudes en explorar mi portafolio y descubrir más sobre mi experiencia y habilidades en el mundo de la programación. Si tienes alguna pregunta o necesitas más información, no dudes en contactarme.</p>
+			<h3 id="habilidades" style="margin-top: 40px;">Habilidades</h3>
+			<div id="skills">
+				<img src="img/skill_1.png" alt="HTML">
+				<img src="img/skill_2.png" alt="CSS">
+				<img src="img/skill_3.png" alt="JS">
+				<img src="img/skill_4.png" alt="PHP">
+				<img src="img/skill_5.png" alt="MySQL">
+				<img src="img/skill_6.png" alt="JQuery">
+				<img src="img/skill_7.png" alt="Java">
+				<img src="img/skill_8.png" alt="Python">
+				<img src="img/skill_9.png" alt="GIT">
+			</div>
+		</div>
+		
+		<hr class="separador">
+		<div id="seccion_cuatro">
+			<h2 id="contact_title">CONTACTO</h2>
+			<p>email &#160&#160&#160<a href="mailto:nahuelastor@gmail.com">nahuelastor@gmail.com</a></p>
+			<p>whatsapp &#160&#160&#160<a href="https://wa.me/5492236895364">+54 9223 689 5364</a></p>
+			<div class="links_icons">
+				<a href="https://linkedin.com/in/carlos-calcara-287182266"><img src="img/linked.png" alt="LinkedIn"></a>
+				<a href="https://www.instagram.com/cactu6/"><img src="img/insta.png" alt="Instagram"></a>
+				<a href="https://github.com/Nahuel77"><img src="img/github.png" alt="github"></a>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
