@@ -337,7 +337,7 @@ input{
 	margin: 30px;
 }
 
-.parrafo p, #seccion_tres p{
+.parrafo p, #seccion_tres p, #nota1{
 	font-family: 'Orbitron', sans-serif;
 	color: #25BDEF;
 	letter-spacing: 3px;
