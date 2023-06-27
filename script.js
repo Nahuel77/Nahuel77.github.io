@@ -67,7 +67,7 @@ window.addEventListener('load', function() {
 		let pic_src = event.target.getAttribute("src");
 		showcase.style.visibility = "visible";
 		document.getElementById("thispic").setAttribute("src", pic_src);
-		actual_pic();
+		actualPic();
 	}
 
 	close.addEventListener("click", closeGalery);
@@ -86,13 +86,13 @@ window.addEventListener('load', function() {
 	function prevPic(){
 		let prev = thispic.previousElementSibling.getAttribute("src");
 		document.getElementById("thispic").setAttribute("src", prev);
-		actual_pic();
+		actualPic();
 	}
 
 	function nextPic(){
 		let next = thispic.nextElementSibling.getAttribute("src");
 		document.getElementById("thispic").setAttribute("src", next);
-		actual_pic();
+		actualPic();
 	}
 
 	const buttons = document.getElementsByClassName("proyects_titles");
