@@ -347,7 +347,7 @@ input{
 }
 
 .proyects_titles, .proyects_list{
-	display: block;
+	display: none;
 	font-family: 'Orbitron', sans-serif;
 	color: #02F767;
 	margin: 0;
