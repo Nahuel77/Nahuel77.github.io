@@ -329,6 +329,13 @@ input{
 
 #p_1, #p_2, #p_3, #p_4{
 	display: none;
+	text-align: left;
+}
+
+#p_4 iframe{
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
 }
 
 #nota, #habilidades, #seccion_cuatro p{
@@ -360,6 +367,7 @@ input{
 
 .proyects_titles{
 	cursor: pointer;
+	text-align: left;
 }
 
 #skills{
@@ -477,5 +485,10 @@ input{
 
 	#sobre_mi_texto_4{
 		padding-bottom: 50px;
+	}
+
+	#p_4 iframe{
+		max-width: 560px;
+		height: 315px;
 	}
 }
