@@ -141,4 +141,11 @@ window.addEventListener('load', function() {
 	const check = document.getElementById("check");
 	check.addEventListener("click", getLenguajes);
 
+	//link a cv
+
+	const curriculum = this.document.getElementById("curriculum");
+	curriculum.addEventListener('click', ()=>{
+		window.open('docs/CV_Nahuel.pdf', '_blank');
+	});
+
 });

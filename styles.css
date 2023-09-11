@@ -327,7 +327,7 @@ input{
 	padding: 0;
 }
 
-#p_1, #p_2, #p_3, #p_4{
+#p_1, #p_2, #p_3, #p_4, #p_5, #p_6, #p_7, #p_8{
 	display: none;
 	text-align: left;
 }
@@ -338,7 +338,7 @@ input{
 	overflow: hidden;
 }
 
-#nota, #habilidades, #seccion_cuatro p{
+#nota, #habilidades, #certificados, #seccion_cuatro p{
 	font-family: 'Orbitron', sans-serif;
 	color: #02F767;
 	margin: 30px;
@@ -370,7 +370,7 @@ input{
 	text-align: left;
 }
 
-#skills{
+.box{
 	margin: 20px 0 20px 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -379,7 +379,7 @@ input{
 	padding: 10px;
 }
 
-#skills img{
+.box img{
 	width: 80px;
 }
 
@@ -402,12 +402,20 @@ input{
 	display: block;
 }
 
+.links_icons{
+	padding: 100px 0 0 50px;
+}
+
 .links_icons img{
 	margin: 0 50px 50px 50px;
-	width: 50px;
+	width: 80px;
 	height: auto;
 	background-color: #00F769;
 	border-radius: 50%
+}
+
+#curriculum{
+	cursor: pointer;
 }
 
 @media (min-width: 1024px){
@@ -470,6 +478,11 @@ input{
 		flex-direction: column;
 	}
 
+	#seccion_cuatro p{
+		font-size: 1.3rem;
+		padding-left: 5rem;
+	}
+
 	.galery{
 		margin-top: 20px;
 		display: grid;
@@ -481,6 +494,7 @@ input{
 		width: 15vw;
 		height: auto;
 		margin: 0 20px 20px 0;
+		cursor: pointer;
 	}
 
 	#sobre_mi_texto_4{
@@ -490,5 +504,10 @@ input{
 	#p_4 iframe{
 		max-width: 560px;
 		height: 315px;
+	}
+
+	.proyects_titles:hover{
+		color: #f745e8;
+		text-shadow: 1px 1px 15px #3c4ffa;
 	}
 }

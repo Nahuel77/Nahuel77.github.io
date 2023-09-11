@@ -31,7 +31,14 @@
 		"habilidades": "Habilidades",
 		"contact_title": "CONTACTO",
 		"nota1": "Click en los títulos para ver el contenido.",
-		"nota": "* Esta web fue creada usando JavasCript puro. ;)"
+		"nota": "* Esta web fue creada usando JavasCript puro. ;)",
+		"certificados": "Certificados",
+		"certificado_1": "Programa Codo a Codo - Fullstack Java",
+		"certificado_2": "Universidad de Helsinki - Elementos de la IA",
+		"certificado_3": "Codo a Codo - Big Data",
+		"certificado_4": "BA Multiplica 2.0 - Excel Avanzado & Power BI",
+		"progress_1": "¡En progreso!",
+		"progress_2": "¡En progreso!"
 		},
 	"en": {
 		"sobre_mi" : "About me",
@@ -65,6 +72,13 @@
 		"habilidades": "Skills",
 		"contact_title": "CONTACT",
 		"nota1": "Click on the titles to view the content.",
-		"nota": "* This website was created using pure JavaScript. ;)"
+		"nota": "* This website was created using pure JavaScript. ;)",
+		"certificados": "Certificates",
+		"certificado_1": "Codo a Codo Program - Fullstack Java",
+		"certificado_2": "University of Helsinki - Elements of AI",
+		"certificado_3": "Codo a Codo Program - Big Data",
+		"certificado_4": "BA Multiplica 2.0 - Advanced Excel & Power BI",
+		"progress_1": "In progress!",
+		"progress_2": "In progress!"
 		}
 }
