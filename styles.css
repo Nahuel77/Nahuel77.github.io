@@ -418,6 +418,10 @@ input{
 	cursor: pointer;
 }
 
+#blockGameFrame{
+	display: none;
+}
+
 @media (min-width: 1024px){
 	#menu_bar{
 		display: none;
@@ -509,5 +513,9 @@ input{
 	.proyects_titles:hover{
 		color: #f745e8;
 		text-shadow: 1px 1px 15px #3c4ffa;
+	}
+
+	#blockGameFrame{
+		display: block;
 	}
 }
