@@ -1,0 +1,56 @@
+#card {
+    position: relative;
+    min-width: 20vw;
+    min-height: 30vh;
+    margin: 2rem;
+    padding: 2rem;
+    border-image: linear-gradient(-45deg, red 0%, blue 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+
+    h3 {
+        font-family: Dare;
+        text-align: center;
+    }
+}
+
+#card:hover {
+    animation: card-eff 1.8s ease-in-out infinite;
+    cursor: pointer;
+    h3 {
+        animation: glitch 1s 0s linear reverse infinite;
+        text-shadow: 4px 4px 2px blue,
+            -4px -4px 10px red;
+    }
+
+}
+
+@keyframes card-eff {
+    0% {
+        border-image: linear-gradient(-45deg, red 0%, blue 100%) 1;
+    }
+
+    25% {
+        border-image: linear-gradient(45deg, red 0%, blue 100%) 1;
+    }
+
+    50% {
+        border-image: linear-gradient(-45deg, blue 0%, red 100%) 1;
+    }
+
+    75% {
+        border-image: linear-gradient(45deg, blue 0%, red 100%) 1;
+    }
+
+    100% {
+        border-image: linear-gradient(-45deg, red 0%, blue 100%) 1;
+    }
+}

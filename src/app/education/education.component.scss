@@ -1,0 +1,110 @@
+#education {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 90vh;
+    align-items: center;
+    background-color: rgba($color: #0f0f0f, $alpha: 0.97);
+    margin: 5rem;
+    border-image: linear-gradient(-45deg, red 0%, blue 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    overflow-y: auto;
+
+    #edu_text,
+    #show_case {
+        margin: 2rem 4rem;
+        font-size: 1.8rem;
+        font-family: Dare;
+        text-align: justify;
+
+        #certificates {
+            ul {
+                list-style-type: none;
+                margin: 3rem;
+
+                li {
+                    background-color: rgba($color: #000000, $alpha: 0);
+                    margin: 1rem;
+                    font-family: Menu;
+                    font-size: 2rem;
+                    cursor: pointer;
+
+                    p {
+                        color: aqua;
+                    }
+
+                    p:hover {
+                        animation: glitch 1s 0s linear reverse infinite;
+                        text-shadow: 5px 5px 1px blue,
+                            -5px -5px 15px red;
+                    }
+
+                    img {
+                        display: none;
+                        width: 60vw;
+                    }
+                }
+            }
+        }
+    }
+
+    #skills_case {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-family: Dare;
+            font-size: 1.8rem;
+        }
+
+        #skills {
+            margin: 3rem;
+            display: grid;
+            width: 80vw;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+
+            img {
+                width: 6vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 1.3rem;
+    }
+
+    #education {
+
+        .h2-title {
+            h2 {
+                font-size: 4.5rem;
+            }
+        }
+
+        #edu_text,
+        #show_case {
+            margin: 2rem 2rem;
+            #certificates{
+                ul{
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+        }
+
+        #skills_case {
+            #skills {
+                img {
+                    width: 20vw;
+                }
+            }
+        }
+    }
+
+}

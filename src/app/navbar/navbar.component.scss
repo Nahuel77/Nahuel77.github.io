@@ -1,0 +1,87 @@
+#navbar {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 5rem;
+    background: linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));
+    align-content: center;
+
+    #menu-toggle {
+        display: none;
+        width: 30px;
+        height: 30px;
+    }
+
+    #content-fld {
+        #nav-op {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        font-family: "Dare";
+                        color: white;
+                        margin: 1rem;
+                        font-size: 1.7rem;
+                    }
+
+                    .nav-item:hover {
+                        text-shadow: 4px 4px 2px blue,
+                            -4px -4px 8px red;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        #content-fld {
+            #nav-op {
+                background-color: rgb(27, 27, 27);
+                position: absolute;
+                width: 100vw;
+                z-index: 2;
+
+                ul {
+                    display: none;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 0;
+                }
+
+                ul.active {
+                    display: flex;
+                }
+
+                li {
+                    width: 100%;
+                    text-align: center;
+
+                    a {
+                        display: block;
+                        width: 80%;
+                        padding: 1rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        #menu-toggle {
+            display: flex;
+            width: 50px;
+            height: 50px;
+            margin: 15px 20px;
+            cursor: pointer;
+        }
+    }
+
+}

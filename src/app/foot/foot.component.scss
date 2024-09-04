@@ -1,0 +1,25 @@
+#foot {
+    color: white;
+    display: flex;
+    justify-self: center;
+
+    a {
+        margin: 0px 0.4rem;
+        box-shadow: 0px 0px 10px #ffffff;
+        background-color: black;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 15px;
+        border-radius: 15%;
+
+        img {
+            border-radius: 15%;
+        }
+    }
+
+    a:hover{
+        box-shadow: 4px 4px 4px blue,
+                -2px -2px 15px red;
+    }
+}

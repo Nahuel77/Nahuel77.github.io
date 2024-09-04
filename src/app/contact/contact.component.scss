@@ -1,0 +1,116 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 95vw;
+    height: 90vh;
+    align-items: center;
+    background-color: rgba($color: #0f0f0f, $alpha: 0.97);
+    margin: 5rem;
+    border-image: linear-gradient(-45deg, red 0%, blue 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    overflow-y: auto;
+
+    #contact-method {
+        margin: 2rem 4rem;
+        font-size: 1.8rem;
+        font-family: Dare;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-family: Dare;
+            font-size: 1.8rem;
+        }
+
+        #methods {
+            display: grid;
+            width: 80vw;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                margin: 3rem;
+                align-items: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                width: 6rem;
+
+                img {
+                    padding: 0.5rem 0.5rem;
+                    width: 6rem;
+                }
+            }
+        }
+
+        a:hover {
+            text-shadow: 4px 4px 2px blue,
+                -2px -2px 15px red;
+        }
+
+        #tooltip {
+            visibility: hidden;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.5rem;
+        }
+
+        #tooltip.show {
+            visibility: visible;
+            animation: fade 2s ease-in-out;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            70% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    #contact {
+
+        #contact-method {
+            p {
+                text-align: left;
+            }
+
+            #methods {
+                width: 80vw;
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+                gap: 1rem;
+                padding: 1rem;
+
+                a {
+                    margin: 0px;
+                    p{
+                        font-size: 1rem;
+                    }
+                    img {
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

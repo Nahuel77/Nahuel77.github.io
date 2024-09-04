@@ -1,0 +1,20 @@
+<div id="proyects">
+    <div class="h2-title">
+        <h2 class="h2" data-text="Proyectos">Proyectos</h2>
+    </div>
+    <div>
+        <app-gallery *ngIf="isGalleryOpen" [img]="selectedImg"
+            (close)="closeGallery()"></app-gallery>
+    </div>
+    <div id="gallery">
+        <app-card title="Kiosco App"
+            [img]="['img/proyect_1_1.png', 'img/proyect_1_2.png', 'img/proyect_1_3.png', 'img/proyect_1_4.png']"
+            (cardClick)="openGallery($event)"></app-card>
+        <app-card title="Tiler Maker" [img]="['img/proyect_2_1.png', 'img/proyect_2_2.png', 'img/proyect_2_3.png',]"
+            (cardClick)="openGallery($event)"></app-card>
+        <app-card title="Proyecto Codo a Codo"
+            [img]="['img/proyect_3_1.png', 'img/proyect_3_2.png', 'img/proyect_3_3.png']"
+            (cardClick)="openGallery($event)"></app-card>
+        <app-card title="CRUD MERN" [img]="['img/proyect_4_1.png']" (cardClick)="openGallery($event)"></app-card>
+    </div>
+</div>

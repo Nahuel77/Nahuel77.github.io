@@ -1,0 +1,15 @@
+<div id="navbar">
+    <div id="menu-toggle">
+        <img src="icons/menu.png" alt="menu" (click)="isMenuOpen = !isMenuOpen">
+    </div>
+    <div id="content-fld">
+        <div id="nav-op">
+            <ul [ngClass]="{'active': isMenuOpen}">
+                <li><a class="nav-item" routerLink="/home" (click)="closeMenu()">Inicio</a></li>
+                <li><a class="nav-item" routerLink="/proyects" (click)="closeMenu()">Proyectos</a></li>
+                <li><a class="nav-item" routerLink="/education" (click)="closeMenu()">Formación</a></li>
+                <li><a class="nav-item" routerLink="/contact" (click)="closeMenu()">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+#proyects {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 90vh;
+    align-items: center;
+    background-color: rgba($color: #0f0f0f, $alpha: 0.97);
+    margin: 5rem;
+    border-image: linear-gradient(-45deg, red 0%, blue 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    #gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40vw, 22fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #proyects {
+        .h2-title {
+            h2 {
+                font-size: 5rem;
+            }
+        }
+
+        #gallery {
+            grid-template-columns: repeat(auto-fit, minmax(80vw, 22fr));
+            gap: 1rem;
+        }
+    }
+}

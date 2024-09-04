@@ -1,0 +1,10 @@
+<div *ngIf="img.length > 0" id="gallery">
+    <div id="gallery-header">
+        <button (click)="closeGallery()">&#10060;</button>
+    </div>
+    <div id="gallery-content">
+        <button id="nav-button" (click)="prevImage()">&#10094;</button>
+        <img [src]="img[currentIndex]" alt="Gallery image" class="gallery-image" />
+        <button id="nav-button" (click)="nextImage()">&#10095;</button>
+    </div>
+</div>
