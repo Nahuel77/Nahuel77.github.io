@@ -11,6 +11,12 @@
     border-style: solid;
     overflow-y: auto;
 
+    #edu_text{
+        p{
+            font-family: Menu;
+        }
+    }
+
     #edu_text,
     #show_case {
         margin: 2rem 4rem;
@@ -87,11 +93,18 @@
             }
         }
 
+        #edu_text {
+            p {
+                font-family: Text;
+            }
+        }
+
         #edu_text,
         #show_case {
             margin: 2rem 2rem;
-            #certificates{
-                ul{
+
+            #certificates {
+                ul {
                     padding: 0px;
                     margin: 0px;
                 }
