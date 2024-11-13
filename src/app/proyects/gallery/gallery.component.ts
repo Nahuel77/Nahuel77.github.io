@@ -19,7 +19,6 @@ export class GalleryComponent {
   nextImage() {
     if (this.currentIndex < this.img.length - 1) {
       this.currentIndex++;
-      console.log(this.repo);
     } else {
       this.currentIndex = 0;
     }
