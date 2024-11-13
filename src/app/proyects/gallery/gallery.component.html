@@ -5,6 +5,9 @@
     <div id="gallery-content">
         <button id="nav-button" (click)="prevImage()">&#10094;</button>
         <img [src]="img[currentIndex]" alt="Gallery image" class="gallery-image" />
-        <button id="nav-button" (click)="nextImage()">&#10095;</button>
+        <a class="foot-lnk" [attr.href]="repo" target="_blank" rel="noopener noreferrer">
+            <img src="icons/github.png" alt="github">
+        </a>
+        <button id="nav-button2" (click)="nextImage()">&#10095;</button>
     </div>
 </div>

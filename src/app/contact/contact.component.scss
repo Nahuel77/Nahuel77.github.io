@@ -16,11 +16,12 @@
         margin: 2rem 4rem;
         font-size: 1.8rem;
         font-family: Dare;
-        text-align: justify;
         display: flex;
+        text-align: justify;
         flex-direction: column;
-
+        align-items: center;
         p {
+            width: 50vw;
             font-family: Menu;
             font-size: 1.8rem;
         }

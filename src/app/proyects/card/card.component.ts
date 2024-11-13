@@ -9,12 +9,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() title: string = '';
   @Input() img: string[] = [];
-  @Output() cardClick = new EventEmitter<{img: string[], title: string}>()
+  @Input() title: string = '';
+  @Input() repo: string = '';
+  @Output() cardClick = new EventEmitter<{img: string[], title: string, repo: string}>()
 
   onCardClick(){
-    this.cardClick.emit({ img: this.img, title: this.title});
+    this.cardClick.emit({ img: this.img, title: this.title, repo: this.repo });
   }
 
 }

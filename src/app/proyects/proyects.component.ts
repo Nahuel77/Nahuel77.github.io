@@ -14,11 +14,14 @@ export class ProyectsComponent {
   isGalleryOpen = false;
   selectedImg: string[] = [];
   selectedTitle: string = '';
+  selectedRepo: string = '';
 
-  openGallery(data: {img: string[], title: string}){
+  openGallery(data: {img: string[], title: string, repo: string}){
+    console.log(data.repo);
+    this.isGalleryOpen = true;
     this.selectedImg = data.img;
     this.selectedTitle = data.title;
-    this.isGalleryOpen = true;
+    this.selectedRepo = data.repo;
   }
 
   closeGallery(){

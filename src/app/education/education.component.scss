@@ -13,16 +13,22 @@
 
     #edu_text{
         p{
+            width: 50vw;
             font-family: Menu;
         }
     }
+
+
 
     #edu_text,
     #show_case {
         margin: 2rem 4rem;
         font-size: 1.8rem;
         font-family: Dare;
+        display: flex;
+        flex-direction: column;
         text-align: justify;
+        align-items: center;
 
         #certificates {
             ul {
@@ -68,13 +74,15 @@
         #skills {
             margin: 3rem;
             display: grid;
-            width: 80vw;
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            width: 40vw;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            justify-content: center;
             gap: 1rem;
             padding: 1rem;
 
             img {
                 width: 6vw;
+                margin: 1rem;
             }
         }
     }
