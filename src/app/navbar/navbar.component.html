@@ -12,8 +12,10 @@
             </ul>
         </div>
         <div id="lang">
-            <input type="checkbox" id="lang-toggle" [(ngModel)]="isEnglish" (change)="changeLanguage()"/>
-            <label for="toggle" class="toggle-label"></label>
+            <div id="lang-container">
+                <input type="checkbox" id="lang-toggle" [(ngModel)]="isEnglish" (change)="changeLanguage()"/>
+                <label for="toggle" id="toggle-label"></label>
+            </div>
         </div>
     </div>
 </div>

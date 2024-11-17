@@ -1,10 +1,9 @@
 <div id="contact">
     <div class="h2-title">
-        <h2 class="h2" data-text="Contacto">Contacto</h2>
+        <h2 class="h2" [attr.data-text]="CONTACT.title|translate">{{CONTACT.title|translate}}</h2>
     </div>
     <div id="contact-method">
-        <p>Clickeando en el icono de Email se copia al portapapeles mi correo electronico.
-        </p>
+        <p>{{CONTACT.t1|translate}}</p>
         <div id="methods">
             <a href="docs/CV Español.pdf" target="_blank" rel="noopener noreferrer">
                 <img src="icons/cv.png" alt="CV en Español">
