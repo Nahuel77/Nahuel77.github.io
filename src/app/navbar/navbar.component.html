@@ -5,11 +5,15 @@
     <div id="content-fld">
         <div id="nav-op">
             <ul [ngClass]="{'active': isMenuOpen}">
-                <li><a class="nav-item" routerLink="/home" (click)="closeMenu()">Inicio</a></li>
-                <li><a class="nav-item" routerLink="/proyects" (click)="closeMenu()">Proyectos</a></li>
-                <li><a class="nav-item" routerLink="/education" (click)="closeMenu()">Formación</a></li>
-                <li><a class="nav-item" routerLink="/contact" (click)="closeMenu()">Contacto</a></li>
+                <li><a class="nav-item" routerLink="/home" (click)="closeMenu()">{{'Inicio'|translate}}</a></li>
+                <li><a class="nav-item" routerLink="/proyects" (click)="closeMenu()">{{'Proyectos'|translate}}</a></li>
+                <li><a class="nav-item" routerLink="/education" (click)="closeMenu()">{{'Formación'|translate}}</a></li>
+                <li><a class="nav-item" routerLink="/contact" (click)="closeMenu()">{{'Contacto'|translate}}</a></li>
             </ul>
+        </div>
+        <div id="lang">
+            <input type="checkbox" id="lang-toggle" [(ngModel)]="isEnglish" (change)="changeLanguage()"/>
+            <label for="toggle" class="toggle-label"></label>
         </div>
     </div>
 </div>
