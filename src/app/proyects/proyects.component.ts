@@ -2,15 +2,17 @@ import { Component } from '@angular/core';
 import { CardComponent } from './card/card.component';
 import { GalleryComponent } from "./gallery/gallery.component";
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-proyects',
   standalone: true,
-  imports: [CardComponent, GalleryComponent, CommonModule],
+  imports: [CardComponent, GalleryComponent, CommonModule, TranslateModule],
   templateUrl: './proyects.component.html',
   styleUrl: './proyects.component.scss'
 })
 export class ProyectsComponent {
+  PROYECTS = { title: 'PROYECTS.title' };
   isGalleryOpen = false;
   selectedImg: string[] = [];
   selectedTitle: string = '';

@@ -1,31 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { TranslateService } from '@ngx-translate/core';
-import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, CommonModule, FormsModule, TranslateModule],
+  imports: [RouterLink, CommonModule, FormsModule, TranslateModule ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  isEnglish: boolean = true;
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('es');
-    this.translate.use('es');
-  }
+  @Output() languageChange = new EventEmitter<string>();
+
+  isEnglish = false;
 
   changeLanguage() {
-    console.log(this.isEnglish);
-    if (this.isEnglish) {
-      this.translate.use('es');
-    } else {
-      this.translate.use('en');
-    }
+    const selectedLanguage = this.isEnglish ? 'en' : 'es';
+    this.languageChange.emit(selectedLanguage);
   }
 
   isMenuOpen = false;

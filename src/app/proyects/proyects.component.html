@@ -1,9 +1,10 @@
 <div id="proyects">
     <div class="h2-title">
-        <h2 class="h2" data-text="Proyectos">Proyectos</h2>
+        <h2 class="h2" [attr.data-text]="PROYECTS.title | translate">{{PROYECTS.title|translate}}</h2>
     </div>
     <div>
-        <app-gallery *ngIf="isGalleryOpen" [img]="selectedImg" [repo]="selectedRepo" (close)="closeGallery()"></app-gallery>
+        <app-gallery *ngIf="isGalleryOpen" [img]="selectedImg" [repo]="selectedRepo"
+            (close)="closeGallery()"></app-gallery>
     </div>
     <div id="gallery">
         <app-card title="Kiosco App" repo="https://github.com/Nahuel77/AppKiosco.git"

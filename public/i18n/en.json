@@ -2,5 +2,11 @@
     "Inicio": "Home",
     "Proyectos": "Proyects",
     "Formación": "Education",
-    "Contacto": "Contact"
+    "Contacto": "Contact",
+    "HOME":{
+        "lema": "Turning problems into code, and code into innovation"
+    },
+    "PROYECTS":{
+        "title": "Proyects"
+    }
 }
