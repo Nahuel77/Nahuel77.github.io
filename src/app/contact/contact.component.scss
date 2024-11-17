@@ -5,7 +5,7 @@
     width: 95vw;
     height: 90vh;
     align-items: center;
-    background-color: rgba($color: #0f0f0f, $alpha: 0.97);
+    background-color: rgba($color: #000000, $alpha: 0.92);
     margin: 5rem;
     border-image: linear-gradient(-45deg, red 0%, blue 100%) 1;
     border-width: 2px;
@@ -28,7 +28,7 @@
 
         #methods {
             display: grid;
-            width: 80vw;
+            width: 50vw;
             grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             gap: 1rem;
             padding: 1rem;
@@ -40,21 +40,24 @@
                 align-items: center;
                 text-decoration: none;
                 font-size: 1.5rem;
-                width: 6rem;
+                width: auto;
+                p{
+                    width: auto;
+                }
 
                 img {
                     padding: 0.5rem 0.5rem;
-                    width: 6rem;
+                    max-width: 4rem;
                 }
+            }
+            a:hover {
+                text-shadow: 4px 4px 6px blue, 3px 3px 4px blue, 2px 2px 2px blue,
+                    -4px -4px 15px red, -3px -3px 10px red, -2px -2px 5px red;
             }
         }
 
-        a:hover {
-            text-shadow: 4px 4px 2px blue,
-                -2px -2px 15px red;
-        }
-
         #tooltip {
+            font-family: menu;
             visibility: hidden;
             color: #fff;
             text-align: center;
@@ -72,7 +75,7 @@
                 opacity: 0;
             }
 
-            30% {
+            10% {
                 opacity: 1;
             }
 
@@ -94,6 +97,8 @@
         #contact-method {
             p {
                 text-align: left;
+                text-align: justify;
+                width: 80vw;
             }
 
             #methods {

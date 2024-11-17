@@ -27,8 +27,8 @@
     cursor: pointer;
     h3 {
         animation: glitch 1s 0s linear reverse infinite;
-        text-shadow: 4px 4px 2px blue,
-            -4px -4px 10px red;
+        text-shadow: 4px 4px 6px blue, 3px 3px 4px blue, 2px 2px 2px blue,
+            -4px -4px 15px red, -3px -3px 10px red, -2px -2px 5px red;
     }
 
 }
