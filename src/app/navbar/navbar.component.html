@@ -9,13 +9,13 @@
                 <li><a class="nav-item" routerLink="/proyects" (click)="closeMenu()">{{'Proyectos'|translate}}</a></li>
                 <li><a class="nav-item" routerLink="/education" (click)="closeMenu()">{{'Formación'|translate}}</a></li>
                 <li><a class="nav-item" routerLink="/contact" (click)="closeMenu()">{{'Contacto'|translate}}</a></li>
+                <div id="lang">
+                    <div id="lang-container">
+                        <input type="checkbox" id="lang-toggle" [(ngModel)]="isEnglish" (change)="changeLanguage()"/>
+                        <label for="lang-toggle" id="toggle-label"></label>
+                    </div>
+                </div>
             </ul>
-        </div>
-        <div id="lang">
-            <div id="lang-container">
-                <input type="checkbox" id="lang-toggle" [(ngModel)]="isEnglish" (change)="changeLanguage()"/>
-                <label for="toggle" id="toggle-label"></label>
-            </div>
         </div>
     </div>
 </div>

@@ -39,48 +39,78 @@
                     }
 
                 }
-            }
-        }
 
-        #lang {
-            position: absolute;
-            right: 3rem;
-
-            #lang-container {
-                display: flex;
-                background-color: rgba(0, 0, 0, 0);
-                align-items: center;
-                justify-content: center;
-
-                #toggle-label {
-                    background-color: #000000;
-                    border: 5px solid #606c70;
-                    width: 2rem;
-                    height: 1rem;
-                    border-radius: 33px;
-                    cursor: pointer;
-                    position: relative;
-                    transition: 0.4s;
-                }
-
-                #toggle-label::before {
+                #lang {
                     position: absolute;
-                    content: "";
-                    background-color: #818181;
-                    border: 1px solid #8d8d8d;
-                    width: 1rem;
-                    height: 1rem;
-                    border-radius: 30px;
-                    margin: 0;
-                    transition: 0.4s;
-                }
-                #lang-toggle:checked + #toggle-label::before{
-                    transform: translate(1rem);
-                }
-                #lang-toggle{
-                    //display: none;
+                    right: 2.5rem;
+                    top: 1.5rem;
+                    display: flex;
+
+                    #lang-container {
+                        display: flex;
+                        background-color: rgba(0, 0, 0, 0);
+                        align-items: center;
+                        justify-content: center;
+
+                        #toggle-label {
+                            background-color: #000000;
+                            width: 4rem;
+                            height: 1.5rem;
+                            border-radius: 33px;
+                            cursor: pointer;
+                            position: relative;
+                            transition: 0.4s;
+
+                            &::before,
+                            &::after {
+                                position: absolute;
+                                font-family: MENU;
+                                font-size: 0.8rem;
+                                color: white;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: 0.4s;
+                            }
+
+                            &::before {
+                                content: "ES";
+                                left: 0.4rem;
+                                background-color: transparent;
+                            }
+
+                            &::after {
+                                content: "EN";
+                                right: 0.4rem;
+                                background-color: transparent;
+                            }
+                        }
+
+                        #lang-toggle {
+                            display: none;
+                        }
+
+                        #lang-toggle:checked+#toggle-label::before {
+                            color: rgba(255, 255, 255, 0.5);
+                        }
+
+                        #lang-toggle:checked+#toggle-label::after {
+                            color: white;
+                        }
+
+                        #lang-toggle:not(:checked)+#toggle-label::before {
+                            color: white;
+                        }
+
+                        #lang-toggle:not(:checked)+#toggle-label::after {
+                            color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
                 }
             }
+
         }
     }
 }
@@ -88,21 +118,35 @@
 @media (max-width: 768px) {
     #navbar {
         #content-fld {
+
             #nav-op {
                 background-color: rgb(27, 27, 27);
                 position: absolute;
                 width: 100vw;
-                z-index: 2;
+                z-index: 2; 
 
                 ul {
-                    display: none;
-                    flex-direction: column;
+                    display: none;  
                     width: 100%;
+                    margin: 0;
                     padding: 0;
+
+                    #lang {
+                        position: relative;
+                        margin: 0 0 1.5rem 0;
+                        #lang-container {
+                            width: 100vw;
+                            margin: 0 0 2rem 0;
+                        }
+                    }
                 }
 
                 ul.active {
                     display: flex;
+                    flex-direction: column;
+                    #lang {
+                        position: relative;
+                    }
                 }
 
                 li {
