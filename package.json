@@ -1,6 +1,7 @@
 {
   "name": "portafolios",
   "version": "2.2.0",
+  "homepage": "https://nahuel77.github.io/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
