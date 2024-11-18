@@ -1,0 +1,23 @@
+{
+    "Inicio": "Home",
+    "Proyectos": "Proyects",
+    "Formación": "Education",
+    "Contacto": "Contact",
+    "HOME":{
+        "lema": "Turning problems into code, and code into innovation"
+    },
+    "PROYECTS":{
+        "title": "Proyects"
+    },
+    "EDUCATION":{
+        "title": "Education",
+        "t1": "Currently, I am studying System Analyst at the ISET Institute in Mar del Plata.",
+        "t2": "As for programming itself, although I have participated in courses, most of my knowledge comes from constant practice and reading other people's code. I have learned by breaking things, rebuilding them, and always seeking new challenges.",
+        "t3": "Some of the courses that have been most useful to me",
+        "t4": "Skills"
+    },
+    "CONTACT":{
+        "title": "Contact",
+        "t1": "Clicking on the Email icon copies my email address to the clipboard."
+    }
+}

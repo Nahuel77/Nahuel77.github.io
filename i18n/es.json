@@ -1,0 +1,23 @@
+{
+    "Inicio": "Inicio",
+    "Proyectos": "Proyectos",
+    "Formación": "Formación",
+    "Contacto": "Contacto",
+    "HOME":{
+        "lema": "Transformando problemas en código, y código en innovación"
+    },
+    "PROYECTS":{
+        "title": "Proyectos"
+    },
+    "EDUCATION":{
+        "title": "Formación",
+        "t1": "Actualmente, estoy cursando la carrera de Analista de Sistemas en el instituto ISET de Mar del Plata.",
+        "t2": "En lo que respecta a la programación en sí, aunque he participado en cursos, la mayoría de mis conocimientos provienen de la práctica constante y de la lectura de código ajeno. He aprendido rompiendo, rehaciendo y siempre buscando nuevos retos.",
+        "t3": "Algunos de los cursos que mas me han servido",
+        "t4": "Habilidades"
+    },
+    "CONTACT":{
+        "title": "Contacto",
+        "t1": "Clickeando en el icono de Email se copia al portapapeles mi correo electronico."
+    }
+}
