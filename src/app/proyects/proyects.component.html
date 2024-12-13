@@ -23,13 +23,14 @@
         <h2 class="h2" [attr.data-text]="PROYECTS.title2 | translate">{{PROYECTS.title2|translate}}</h2>
     </div>
     <div class="gallery">
-        <app-card title="Python, Pandas, Flask, Vite, React"
-            repo="https://github.com/Nahuel77/AD-ARGGOB1"
+        <app-card title="Python, Pandas, Flask, Vite, React" repo="https://github.com/Nahuel77/AD-ARGGOB1"
             [img]="['img/proyect_5_1.png', 'img/proyect_5_2.png', 'img/proyect_5_3.png' ]"
             (cardClick)="openGallery($event)"></app-card>
-        <app-card title="Power Bi"
-            repo="docs/Porcentaje de puestos ocupados por mujeres por sector actividad.pdf"
-            [img]="['img/proyect_6_1.png', 'img/proyect_6_2.png',]"
-            href="docs/CV Español.pdf" (cardClick)="openGallery($event)"></app-card>
+        <app-card title="Power Bi" repo="docs/Porcentaje de puestos ocupados por mujeres por sector actividad.pdf"
+            [img]="['img/proyect_6_1.png', 'img/proyect_6_2.png',]" (cardClick)="openGallery($event)"></app-card>
+        <app-card title="Looker Studio"
+            repo="https://lookerstudio.google.com/reporting/ffa936e1-86e0-4ba9-b544-51f9babf4c62"
+            [img]="['img/proyect_7_1.png', 'img/proyect_7_2.png', 'img/proyect_7_3.png']"
+            (cardClick)="openGallery($event)"></app-card>
     </div>
 </div>
