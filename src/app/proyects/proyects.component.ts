@@ -12,7 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './proyects.component.scss'
 })
 export class ProyectsComponent {
-  PROYECTS = { title: 'PROYECTS.title' };
+  PROYECTS = { title: 'PROYECTS.title', title2: 'PROYECTS.title2' };
   isGalleryOpen = false;
   selectedImg: string[] = [];
   selectedTitle: string = '';

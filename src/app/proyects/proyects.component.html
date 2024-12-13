@@ -6,7 +6,7 @@
         <app-gallery *ngIf="isGalleryOpen" [img]="selectedImg" [repo]="selectedRepo"
             (close)="closeGallery()"></app-gallery>
     </div>
-    <div id="gallery">
+    <div class="gallery">
         <app-card title="Kiosco App" repo="https://github.com/Nahuel77/AppKiosco.git"
             [img]="['img/proyect_1_1.png', 'img/proyect_1_2.png', 'img/proyect_1_3.png', 'img/proyect_1_4.png']"
             (cardClick)="openGallery($event)"></app-card>
@@ -18,5 +18,18 @@
             (cardClick)="openGallery($event)"></app-card>
         <app-card title="CRUD MERN" repo="https://github.com/Nahuel77/CRUD-MERN" [img]="['img/proyect_4_1.png']"
             (cardClick)="openGallery($event)"></app-card>
+    </div>
+    <div class="h2-title">
+        <h2 class="h2" [attr.data-text]="PROYECTS.title2 | translate">{{PROYECTS.title2|translate}}</h2>
+    </div>
+    <div class="gallery">
+        <app-card title="Python, Pandas, Flask, Vite, React"
+            repo="https://github.com/Nahuel77/AD-ARGGOB1"
+            [img]="['img/proyect_5_1.png', 'img/proyect_5_2.png', 'img/proyect_5_3.png' ]"
+            (cardClick)="openGallery($event)"></app-card>
+        <app-card title="Power Bi"
+            repo="docs/Porcentaje de puestos ocupados por mujeres por sector actividad.pdf"
+            [img]="['img/proyect_6_1.png', 'img/proyect_6_2.png',]"
+            href="docs/CV Español.pdf" (cardClick)="openGallery($event)"></app-card>
     </div>
 </div>

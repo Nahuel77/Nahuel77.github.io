@@ -12,7 +12,7 @@
     overflow-y: auto;
     overflow-x: hidden;
 
-    #gallery {
+    .gallery {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40vw, 22fr));
