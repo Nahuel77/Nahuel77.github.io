@@ -17,13 +17,15 @@ export class ProyectsComponent {
   selectedImg: string[] = [];
   selectedTitle: string = '';
   selectedRepo: string = '';
+  selectedYoutube?: string;
 
-  openGallery(data: {img: string[], title: string, repo: string}){
-    console.log(data.repo);
+  openGallery(data: {img: string[], title: string, repo: string, youtube?: string}){
+    console.log(data.youtube);
     this.isGalleryOpen = true;
     this.selectedImg = data.img;
     this.selectedTitle = data.title;
     this.selectedRepo = data.repo;
+    this.selectedYoutube = data.youtube;
   }
 
   closeGallery(){

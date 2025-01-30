@@ -1,13 +1,22 @@
 <div *ngIf="img.length > 0" id="gallery">
     <div id="gallery-header">
-        <button (click)="closeGallery()">&#10060;</button>
+        <button id="close-gallery" (click)="closeGallery()">&#10060;</button>
     </div>
     <div id="gallery-content">
-        <button id="nav-button" (click)="prevImage()">&#10094;</button>
         <img [src]="img[currentIndex]" alt="Gallery image" class="gallery-image" />
-        <a class="foot-lnk" [attr.href]="repo" target="_blank" rel="noopener noreferrer">
-            <img src="icons/github.png" alt="github"><p>repo</p>
-        </a>
-        <button id="nav-button2" (click)="nextImage()">&#10095;</button>
+        <div class="gallery-menu">
+            <button id="nav-button" (click)="prevImage()">&#10094;</button>
+            <div class="lnks">
+                <a *ngIf="youtube" class="foot-lnk" [attr.href]="youtube" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/youtube.png" alt="YouTube">
+                    <p>Video</p>
+                </a>
+                <a class="foot-lnk" [attr.href]="repo" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/github.png" alt="github">
+                    <p>repo</p>
+                </a>
+            </div>
+            <button id="nav-button2" (click)="nextImage()">&#10095;</button>
+        </div>
     </div>
 </div>

@@ -3,17 +3,21 @@
         <h2 class="h2" [attr.data-text]="PROYECTS.title | translate">{{PROYECTS.title|translate}}</h2>
     </div>
     <div>
-        <app-gallery *ngIf="isGalleryOpen" [img]="selectedImg" [repo]="selectedRepo"
+        <app-gallery *ngIf="isGalleryOpen" [img]="selectedImg" [repo]="selectedRepo" [youtube]="selectedYoutube"
             (close)="closeGallery()"></app-gallery>
     </div>
     <div class="gallery">
+        <app-card title="Foro (MERN & JWT)" repo="https://github.com/Nahuel77/foro.git"
+            [img]="['img/proyect_9_1.png', 'img/proyect_9_2.png', 'img/proyect_9_3.png', 'img/proyect_9_4.png', 'img/proyect_9_5.png', ]"
+            (cardClick)="openGallery($event)" youtube="https://youtu.be/qageRuaFNlk"></app-card>
         <app-card title="Kiosco App" repo="https://github.com/Nahuel77/AppKiosco.git"
             [img]="['img/proyect_1_1.png', 'img/proyect_1_2.png', 'img/proyect_1_3.png', 'img/proyect_1_4.png']"
             (cardClick)="openGallery($event)"></app-card>
         <app-card title="Tiler Maker" repo="https://github.com/Nahuel77/TilerMaker"
             [img]="['img/proyect_2_1.png', 'img/proyect_2_2.png', 'img/proyect_2_3.png',]"
             (cardClick)="openGallery($event)"></app-card>
-        <app-card title="Life Lab" repo="https://github.com/Nahuel77/life-lab.git" [img]="['img/proyect_8_1.png']" (cardClick)="openGallery($event)"></app-card>
+        <app-card title="Life Lab" repo="https://github.com/Nahuel77/life-lab.git" [img]="['img/proyect_8_1.png']"
+            (cardClick)="openGallery($event)"></app-card>
         <app-card title="Proyecto Codo a Codo" repo="https://github.com/Nahuel77/CodoACodoWebOradores"
             [img]="['img/proyect_3_1.png', 'img/proyect_3_2.png', 'img/proyect_3_3.png']"
             (cardClick)="openGallery($event)"></app-card>
@@ -27,8 +31,8 @@
         <app-card title="Python, Pandas, Flask, Vite, React" repo="https://github.com/Nahuel77/AD-ARGGOB1"
             [img]="['img/proyect_5_1.png', 'img/proyect_5_2.png', 'img/proyect_5_3.png' ]"
             (cardClick)="openGallery($event)"></app-card>
-        <app-card title="Power Bi" repo="docs/adpro1.pdf"
-            [img]="['img/proyect_6_1.png', 'img/proyect_6_2.png',]" (cardClick)="openGallery($event)"></app-card>
+        <app-card title="Power Bi" repo="docs/adpro1.pdf" [img]="['img/proyect_6_1.png', 'img/proyect_6_2.png',]"
+            (cardClick)="openGallery($event)"></app-card>
         <app-card title="Looker Studio"
             repo="https://lookerstudio.google.com/reporting/ffa936e1-86e0-4ba9-b544-51f9babf4c62"
             [img]="['img/proyect_7_1.png', 'img/proyect_7_2.png', 'img/proyect_7_3.png']"

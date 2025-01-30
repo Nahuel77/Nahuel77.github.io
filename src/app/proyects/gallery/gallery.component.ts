@@ -9,12 +9,14 @@ import { HostListener } from '@angular/core';
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss'
 })
+
 export class GalleryComponent {
   @Input() img: string[] = [];
   @Input() title: string = '';
   @Input() repo: string = '';
   @Output() close = new EventEmitter<void>();
   currentIndex: number = 0;
+  @Input() youtube?: string;
 
   nextImage() {
     if (this.currentIndex < this.img.length - 1) {

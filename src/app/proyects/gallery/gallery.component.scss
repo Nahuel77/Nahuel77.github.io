@@ -28,6 +28,7 @@
 
     #gallery-content {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
@@ -36,39 +37,53 @@
             //max-width: 70vw;
         }
 
-        button {
+        button{
             color: red;
             background-color: rgba($color: #000000, $alpha: 1.0);
             font-size: 2rem;
+        }
+
+        #close-gallery {
             //margin: 2rem;
             position: absolute;
             bottom: 2rem;
         }
 
-        #nav-button {
-            left: 45%;
-        }
-
-        #nav-button2 {
-            right: 45%;
-        }
-
-        a {
-            margin: 0px 0.4rem;
-            box-shadow: 0px 0px 10px #ffffff;
-            background-color: black;
+        .gallery-menu {
             display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            width: 30px;
-            height: 30px;
-            margin-bottom: 15px;
-            border-radius: 15%;
-            position: absolute;
-            font-family: "Menu";
-            bottom: 2rem;
-            img {
-                border-radius: 15%;
+            align-items: center;
+            justify-content: center;
+            margin: 3rem;
+
+            .lnks {
+                display: flex;
+                flex-direction: row;
+                width: auto;
+
+                .foot-lnk {
+                    margin: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    border-radius: 15%;
+                    font-family: "Menu";
+
+                    p {
+                        margin: 5px 0 0 0;
+                        text-align: center;
+                    }
+
+                    img {
+                        box-shadow: 0px 0px 10px #ffffff;
+                        background-color: black;
+                        border-radius: 15%;
+                        width: 30px;
+                        height: 30px;
+                        object-fit: contain;
+                    }
+                }
             }
         }
     }
@@ -79,19 +94,6 @@
     #gallery {
         #gallery-content {
             flex-direction: column;
-
-            button {
-                position: absolute;
-                bottom: 2rem;
-            }
-
-            #nav-button {
-                left: 25%;
-            }
-    
-            #nav-button2 {
-                right: 25%;
-            }
 
             img {
                 width: 100vw;
