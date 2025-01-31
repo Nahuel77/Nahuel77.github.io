@@ -31,10 +31,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        img {
+        
+        .gallery-image{
             max-height: 70vh;
-            //max-width: 70vw;
+            margin-top: 3rem;
         }
 
         button{
