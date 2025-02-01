@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --output-path dist/portafolios/browser --base-href /",
+    "postbuild": "cp public/404.html dist/portafolios/browser/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "npm run build && gh-pages -d dist/portafolios/browser"
