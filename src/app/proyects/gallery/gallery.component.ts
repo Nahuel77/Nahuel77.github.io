@@ -17,6 +17,7 @@ export class GalleryComponent {
   @Output() close = new EventEmitter<void>();
   currentIndex: number = 0;
   @Input() youtube?: string;
+  @Input() link?: string;
 
   nextImage() {
     if (this.currentIndex < this.img.length - 1) {

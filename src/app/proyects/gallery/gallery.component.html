@@ -7,13 +7,17 @@
         <div class="gallery-menu">
             <button id="nav-button" (click)="prevImage()">&#10094;</button>
             <div class="lnks">
+                <a *ngIf="link" class="foot-lnk" [attr.href]="link" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/link.png" alt="web">
+                    <p>Web</p>
+                </a>
                 <a *ngIf="youtube" class="foot-lnk" [attr.href]="youtube" target="_blank" rel="noopener noreferrer">
                     <img src="icons/youtube.png" alt="YouTube">
                     <p>Video</p>
                 </a>
                 <a class="foot-lnk" [attr.href]="repo" target="_blank" rel="noopener noreferrer">
                     <img src="icons/github.png" alt="github">
-                    <p>repo</p>
+                    <p>Repo</p>
                 </a>
             </div>
             <button id="nav-button2" (click)="nextImage()">&#10095;</button>

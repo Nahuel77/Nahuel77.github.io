@@ -14,11 +14,12 @@ export class CardComponent {
   @Input() title: string = '';
   @Input() repo: string = '';
   @Input() youtube?: string;
-  @Output() cardClick = new EventEmitter<{img: string[], title: string, repo: string, youtube?: string}>();
+  @Input() link?: string;
+  @Output() cardClick = new EventEmitter<{img: string[], title: string, repo: string, youtube?: string, link?: string}>();
 
 
   onCardClick(){
-    this.cardClick.emit({ img: this.img, title: this.title, repo: this.repo, youtube: this.youtube });
+    this.cardClick.emit({ img: this.img, title: this.title, repo: this.repo, youtube: this.youtube, link: this.link });
   }
 
 }

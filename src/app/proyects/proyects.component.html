@@ -3,10 +3,16 @@
         <h2 class="h2" [attr.data-text]="PROYECTS.title | translate">{{PROYECTS.title|translate}}</h2>
     </div>
     <div>
-        <app-gallery *ngIf="isGalleryOpen" [img]="selectedImg" [repo]="selectedRepo" [youtube]="selectedYoutube"
+        <app-gallery *ngIf="isGalleryOpen" [img]="selectedImg" [repo]="selectedRepo" [youtube]="selectedYoutube" [link]="selectedLink"
             (close)="closeGallery()"></app-gallery>
     </div>
     <div class="gallery">
+        <app-card title="GSpsicanalise" repo="https://github.com/Nahuel77/landing_psicologa"
+            [img]="['img/proyect_12_1.png', 'img/proyect_12_2.png', 'img/proyect_12_3.png', 'img/proyect_12_4.png',]"
+            link="https://www.gspsicanalise.com/" (cardClick)="openGallery($event)"></app-card>
+        <app-card title="Nysa-Club" repo="https://github.com/Nahuel77/Nysa-Club"
+            [img]="['img/proyect_11_1.png', 'img/proyect_11_2.png', 'img/proyect_11_3.png']"
+            link="https://nysa-club.netlify.app/" (cardClick)="openGallery($event)"></app-card>
         <app-card title="Foro (MERN & JWT)" repo="https://github.com/Nahuel77/foro.git"
             [img]="['img/proyect_9_1.png', 'img/proyect_9_2.png', 'img/proyect_9_3.png', 'img/proyect_9_4.png', 'img/proyect_9_5.png' ]"
             (cardClick)="openGallery($event)" youtube="https://youtu.be/qageRuaFNlk"></app-card>
